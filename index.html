@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBSERVATION LOG | 正在观察人类</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;500;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* --- 红白学术配色 --- */
+            --bg-color: #fcfcfc;
+            --text-main: #1a1a1a;
+            --text-red: #b30000;
+            --line-color: #e0e0e0;      
+            
+            /* 字体栈 */
+            --font-art: 'Playfair Display', 'Songti SC', serif;
+            --font-body: 'Noto Sans SC', sans-serif;
+            --font-hand: 'Ma Shan Zheng', cursive;
+            --font-eng: 'Cinzel', serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* --- 布局通用 --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+        }
+
+        /* 极简入口链接样式 */
+        .access-link {
+            display: inline-block;
+            margin-top: 25px; /* 与上面红框的距离 */
+            font-family: var(--font-eng); /* 用那个好康的英文衬线体 */
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--text-main);
+            text-decoration: none;
+            letter-spacing: 2px;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .access-link:hover {
+            color: var(--text-red); /* 悬停变红 */
+            border-bottom: 1px solid var(--text-red); /* 出现下划线 */
+            padding-left: 10px; /* 微微向右移动，增加交互感 */
+        }
+
+        .access-link .arrow {
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .access-link:hover .arrow {
+            transform: translateX(5px); /* 箭头单独向右飞一点 */
+        }
+
+        h1, h2, h3 { margin: 0; font-weight: normal; }
+        
+        .section-title {
+            font-family: var(--font-art);
+            font-size: 2.2rem;
+            color: var(--text-red);
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--text-red);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* --- 1. HERO (首屏) --- */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 60px;
+            border-bottom: 1px solid var(--text-red);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text { flex: 1; z-index: 2; }
+
+        .hero-name {
+            font-family: var(--font-art);
+            font-size: 5rem;
+            line-height: 0.9;
+            color: var(--text-main);
+            font-weight: 900;
+        }
+
+        .hero-name span { color: var(--text-red); display: block; }
+
+        .hero-role {
+            font-family: var(--font-eng);
+            letter-spacing: 4px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .hero-handwritten {
+            font-family: var(--font-hand);
+            font-size: 1.6rem;
+            color: var(--text-red);
+            transform: rotate(-3deg);
+            margin-top: 30px;
+            display: inline-block;
+            border: 2px solid var(--text-red);
+            padding: 5px 20px;
+        }
+
+        .hero-img-box {
+            flex: 0.8;
+            height: 80vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .vtuber-avatar {
+            max-height: 100%;
+            width: auto;
+            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+        }
+
+        /* 背景装饰字 */
+        .bg-deco {
+            position: absolute;
+            font-family: var(--font-eng);
+            font-size: 14rem; /* 稍微加大一点 */
+            /* 原来是 0.03，现在提高到 0.08，颜色更深一点 */
+            color: rgba(160, 0, 0, 0.08); 
+            z-index: 0;
+            top: 12%;
+            left: -80px;
+            pointer-events: none;
+            letter-spacing: 10px; /* 增加字间距，更有张力 */
+            /* 添加一个极其微妙的模糊，增加氛围感 */
+            filter: blur(1px);
+        }
+
+        .section-block { padding: 80px 0; border-bottom: 1px solid var(--line-color); }
+
+        /* --- 2. ABOUT (简介) --- */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 50px;
+        }
+        .highlight-text { font-size: 1.1rem; color: #444; }
+
+        /* --- 3. ACTIVITIES (新版：列表式设计) --- */
+        /* 不再使用卡片，改为更学术的“目录/协议”样式 */
+        .protocol-list {
+            border-top: 1px solid #000;
+        }
+
+        .protocol-item {
+            display: flex;
+            padding: 30px 0;
+            border-bottom: 1px solid #e0e0e0;
+            align-items: flex-start;
+            transition: 0.3s;
+        }
+
+        .protocol-item:hover {
+            background-color: #fffcfc;
+            padding-left: 15px; /* 悬停微动 */
+        }
+
+        .p-index {
+            font-family: var(--font-eng);
+            font-size: 1.5rem;
+            color: var(--text-red);
+            width: 80px;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+
+        .p-content { flex: 1; }
+
+        .p-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .p-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* --- 4. MEMBERSHIP (舰长权益) --- */
+        .lab-section {
+            background-color: #111; /* 黑底 */
+            color: #fff;
+        }
+        
+        .lab-section .section-title { color: #fff; border-color: #fff; }
+
+        .perks-box {
+            border: 1px solid #333;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .perks-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        /* --- 新增：背景装饰元素样式 --- */
+        .deco-mark {
+            position: fixed;
+            font-family: 'Courier New', monospace; /* 使用机械感的等宽字体 */
+            font-weight: bold;
+            color: var(--text-red);
+            opacity: 0.3; /* 若隐若现 */
+            z-index: 0;
+            pointer-events: none; /* 不影响鼠标点击 */
+        }
+
+        .deco-mark.top-left {
+            top: 30px;
+            left: 30px;
+            font-size: 1.5rem;
+        }
+
+        .deco-mark.bottom-right {
+            bottom: 30px;
+            right: 30px;
+            font-size: 2rem;
+        }
+
+        /* 左侧垂直辅助线 */
+        .deco-line-v {
+            position: fixed;
+            left: 120px; /* 大概在“正在观察人类”文字的左边 */
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, var(--text-red), transparent);
+            opacity: 0.15; /* 极淡 */
+            z-index: 0;
+        }
+
+        .perks-list li { margin: 15px 0; font-size: 1.1rem; }
+        .perks-list strong { color: var(--text-red); margin-right: 5px; }
+
+        /* --- 5. ACKNOWLEDGEMENT (纯文本 + 船锚图标) --- */
+        .ack-container { margin-top: 20px; }
+        
+        .name-stream {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            justify-content: flex-start; /* 左对齐更像论文名单 */
+        }
+
+        .fan-name {
+            font-family: 'Courier New', monospace; /* 数据感 */
+            font-size: 0.9rem;
+            color: #888;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+        .fan-name:hover { color: var(--text-red); cursor: default; }
+
+        /* 舰长样式 */
+        .is-captain {
+            color: #000; /* 舰长名字加黑 */
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        .captain-icon {
+            color: var(--text-red); /* 红色船锚 */
+            margin-left: 4px;
+            font-size: 1rem;
+            vertical-align: middle;
+        }
+
+        /* Acknowledgement: reduce vertical spacing for this section */
+        .ack-section { padding: 30px 0; } /* 从 80px 缩小到 30px */
+        .ack-section .section-title { margin-bottom: 12px; border-bottom: none; }
+        .ack-section .ack-container { margin-top: 8px; }
+
+        /* Slightly tighten name gaps to avoid sparse appearance */
+        .ack-section .name-stream { gap: 8px 12px; }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 80px 0;
+            background: #f5f5f5;
+        }
+        .social-link {
+            display: inline-block;
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+        }
+        .social-link:hover { border-color: var(--text-red); color: var(--text-red); }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column-reverse; padding-top: 20px; }
+            .hero-img-box { height: 50vh; width: 100%; }
+            .hero-text { text-align: center; padding-bottom: 40px; }
+            .hero-name { font-size: 3.5rem; }
+            .profile-grid { grid-template-columns: 1fr; }
+            .protocol-item { flex-direction: column; }
+            .p-index { margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="deco-mark top-left">+</div>
+    <div class="deco-mark bottom-right">┘</div>
+    <div class="deco-line-v"></div>
+    <div class="bg-deco">OBSERVER</div>
+
+    <div class="container hero">
+        <div class="hero-text">
+            <div class="hero-role">VIRTUAL RESEARCHER</div>
+            <div class="hero-name">
+                正在<br>
+                <span>观察人类</span>
+            </div>
+            <div class="hero-handwritten">
+                “ 研究停下之后，我就会死 ”
+            </div>
+            <a href="https://space.bilibili.com/3690985523514020" target="_blank" class="access-link">
+                Bilibili主页 <span class="arrow">→</span>
+            </a>
+        </div>
+        <div class="hero-img-box">
+            <img src="avatar.png" alt="Guan Avatar" class="vtuber-avatar" onerror="this.src='https://placehold.co/400x800/eee/b30000?text=Avatar'">
+        </div>
+    </div>
+
+    <section class="section-block">
+        <div class="container profile-grid">
+            <div>
+                <h2 class="section-title">Profile</h2>
+                <div class="highlight-text">
+                    <p><strong>代号：</strong>观 (Kansatsu)</p>
+                    <p><strong>职业：</strong>VTuber Researcher</p>
+                    <p><strong>年龄：</strong>19岁</p>
+                    <p><strong>生日：</strong>4月17日</p>
+                    <p><strong>爱好：</strong>电子游戏</p>
+
+                    <p style="line-height: 1.8;">
+                        目前正以虚拟主播的身份潜入互联网，采用
+                        <a href="https://en.wikipedia.org/wiki/Autoethnography" target="_blank" style="color: var(--text-red); text-decoration: underline; font-weight: bold;">
+                            自我民族志 (Autoethnography)
+                        </a>
+                        的方法，作为探究“虚拟形象”与“中之人”之间的心理映射。
+                    </p>
+                </div>
+            </div>
+            <div style="border-left: 3px solid var(--text-red); padding-left: 30px; display:flex; flex-direction:column; justify-content:center;">
+                <h3 style="font-family: var(--font-eng); margin-bottom:15px; color:var(--text-red);">MISSION</h3>
+                <p>直播作为一种高互动性的媒介，存在着大规模的提供陪伴的潜力，可以以一对多的形式同时服务大量用户，在减轻个人社交压力的同时，将志同道合的观众聚集到同一个在线社区。</p>
+                <p style="font-size:0.9rem; color:#888;">因此我希望你们能在这个直播间感受到温暖与归属感。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block">
+        <div class="container">
+            <h2 class="section-title">Research Protocol</h2>
+            
+            <div class="protocol-list">
+                <div class="protocol-item">
+                    <div class="p-index">01.</div>
+                    <div class="p-content">
+                        <div class="p-title">Literature Review / 学术研读</div>
+                        <p class="p-desc">
+                            解析 VTuber 及 AI VTuber相关论文，阅读LLM/HCI前沿研究。
+                            <br><span style="font-size:0.8rem; color:#999;">(Frequency: Weekly)</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="protocol-item">
+                    <div class="p-index">02.</div>
+                    <div class="p-content">
+                        <div class="p-title">Behavioral Experiments / 游戏回</div>
+                        <p class="p-desc">
+                            游戏本身可以算作一种世界模型（World Model），用来探究人类在虚拟环境中的行为模式。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="protocol-item">
+                    <div class="p-index">03.</div>
+                    <div class="p-content">
+                        <div class="p-title">Field Notes / 杂谈记录</div>
+                        <p class="p-desc">
+                            收集日常生活数据，探讨研究生生活、科研压力与网络生态。
+                        </p>
+                    </div>
+                </div>
+                <div class="protocol-item">
+                    <div class="p-index">04.</div>
+                    <div class="p-content">
+                        <div class="p-title">To Be Continued</div>
+                        <p class="p-desc">
+                            更多研究方向正在规划中，敬请期待。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block lab-section">
+        <div class="container">
+            <h2 class="section-title">Join The Lab</h2>
+            <div class="perks-box">
+                <p style="margin-bottom: 30px; letter-spacing: 2px;">BECOME A CORE RESEARCHER（舰长）</p>
+                <ul class="perks-list">
+                    <li><strong>00.</strong> 当您成为了舰长之后，您的名字会优先的挂在本页面及后续的论文的致谢部分</li>
+                    <li><strong>01.</strong> 每月一次 1v1 学术答疑 (Office Hour)</li>
+                    <li><strong>02.</strong> 论文修改与逻辑梳理 （1次，仅限【观】熟悉的专业）</li>
+                    <li><strong>03.</strong> 加入内部课题组 (QQ)</li>
+                    <li><strong>04.</strong> To be continued...</li>
+                </ul>
+                <a href="https://space.bilibili.com/3690985523514020" target="_blank" rel="noopener" style="color: #fff; border: 1px solid #fff; padding: 10px 30px; text-decoration: none; margin-top: 20px; font-family: var(--font-eng);">
+                    VIEW ON BILIBILI
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 修改此处：为该 section 添加 ack-section 类 -->
+    <section class="section-block ack-section">
+        <div class="container">
+            <h2 class="section-title" style="font-size: 1.8rem; border: none;">Acknowledgement</h2>
+            <p>我们每月会开放一个问卷填写链接，如果您已经是舰队成员/粉丝团成员，您可以在问卷中填写您的信息，我们会通过脚本抓取您的粉丝牌，自动更新致谢名单。</p>
+            <div class="ack-container">
+                <div id="fan-list" class="name-stream">Loading...</div>
+            </div>
+            
+            <p style="margin-top: 40px; font-size: 0.8rem; color: #aaa;">
+                Names marked with <span style="color:var(--text-red)">⚓</span> indicate High-Priority Contributors (Captains).
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2 style="font-family: var(--font-art); margin-bottom: 20px;">Contact</h2>
+            <div style="margin-bottom: 30px;">
+                <a href="https://space.bilibili.com/3690985523514020" class="social-link" target="_blank" rel="noopener">BILIBILI</a>
+                <!-- TWITTER and EMAIL links removed -->
+            </div>
+            <p style="font-size: 0.8rem; color: #999;">
+                © 2026 正在观察人类 PROJECT.<br>
+                DESIGNED FOR HUMANITY.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('fan-list');
+
+            fetch('fans.txt')
+                .then(r => r.text())
+                .then(text => {
+                    const lines = text.split('\n');
+                    const fans = [];
+
+                    lines.forEach(line => {
+                        const t = line.trim();
+                        if(!t) return;
+                        const p = t.split(',');
+                        if(p.length >= 3) {
+                            fans.push({
+                                uid: p[0],
+                                name: p[1],
+                                level: parseInt(p[2]) || 0,
+                                isCaptain: p[3] ? parseInt(p[3]) === 1 : false
+                            });
+                        }
+                    });
+
+                    // 排序：舰长优先，然后等级
+                    fans.sort((a, b) => {
+                        if(b.isCaptain !== a.isCaptain) return b.isCaptain - a.isCaptain;
+                        return b.level - a.level;
+                    });
+
+                    container.innerHTML = '';
+                    fans.forEach(fan => {
+                        const span = document.createElement('span');
+                        span.className = `fan-name ${fan.isCaptain ? 'is-captain' : ''}`;
+                        
+                        if(fan.isCaptain) {
+                            // 舰长：名字 + 船锚图标
+                            span.innerHTML = `${fan.name}<span class="captain-icon">⚓</span>`;
+                            span.title = `舰长 | UID: ${fan.uid}`;
+                        } else {
+                            // 普通
+                            span.innerText = fan.name;
+                            span.title = `UID: ${fan.uid}`;
+                        }
+                        
+                        container.appendChild(span);
+                    });
+                })
+                .catch(e => {
+                    container.innerHTML = "Error: fans.txt not found.";
+                });
+        });
+    </script>
+</body>
+</html>
