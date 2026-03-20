@@ -629,52 +629,123 @@
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('fan-list');
 
-            fetch('fans.txt')
-                .then(r => r.text())
-                .then(text => {
-                    const lines = text.split('\n');
-                    const fans = [];
+            const compareFans = (a, b) => {
+                if (b.isCaptain !== a.isCaptain) return Number(b.isCaptain) - Number(a.isCaptain);
+                if (b.level !== a.level) return b.level - a.level;
+                return String(a.uid).localeCompare(String(b.uid), 'en');
+            };
 
-                    lines.forEach(line => {
-                        const t = line.trim();
-                        if(!t) return;
-                        const p = t.split(',');
-                        if(p.length >= 3) {
-                            fans.push({
-                                uid: p[0],
-                                name: p[1],
-                                level: parseInt(p[2]) || 0,
-                                isCaptain: p[3] ? parseInt(p[3]) === 1 : false
-                            });
-                        }
-                    });
+            const normalizeFans = (fans) =>
+                fans
+                    .map((fan) => ({
+                        uid: String(fan.uid ?? '').trim(),
+                        name: String(fan.name ?? '').trim(),
+                        level: Number.parseInt(fan.level, 10) || 0,
+                        isCaptain: fan.isCaptain === true || Number.parseInt(fan.isCaptain, 10) === 1
+                    }))
+                    .filter((fan) => fan.uid && fan.name)
+                    .sort(compareFans);
 
-                    // 排序：舰长优先，然后等级
-                    fans.sort((a, b) => {
-                        if(b.isCaptain !== a.isCaptain) return b.isCaptain - a.isCaptain;
-                        return b.level - a.level;
-                    });
+            const parseCsvLine = (line) => {
+                const fields = [];
+                let current = '';
+                let inQuotes = false;
 
-                    container.innerHTML = '';
-                    fans.forEach(fan => {
-                        const span = document.createElement('span');
-                        span.className = `fan-name ${fan.isCaptain ? 'is-captain' : ''}`;
-                        
-                        if(fan.isCaptain) {
-                            // 舰长：名字 + 船锚图标
-                            span.innerHTML = `${fan.name}<span class="captain-icon">⚓</span>`;
-                            span.title = `舰长 | UID: ${fan.uid}`;
+                for (let index = 0; index < line.length; index += 1) {
+                    const char = line[index];
+                    const next = line[index + 1];
+
+                    if (char === '"') {
+                        if (inQuotes && next === '"') {
+                            current += '"';
+                            index += 1;
                         } else {
-                            // 普通
-                            span.innerText = fan.name;
-                            span.title = `UID: ${fan.uid}`;
+                            inQuotes = !inQuotes;
                         }
-                        
-                        container.appendChild(span);
+                        continue;
+                    }
+
+                    if (char === ',' && !inQuotes) {
+                        fields.push(current);
+                        current = '';
+                        continue;
+                    }
+
+                    current += char;
+                }
+
+                fields.push(current);
+                return fields;
+            };
+
+            const parseLegacyFansText = (text) => {
+                const fans = [];
+
+                text.split(/\r?\n/).forEach((line) => {
+                    const trimmed = line.trim();
+                    if (!trimmed || trimmed.startsWith('#')) return;
+
+                    const fields = parseCsvLine(trimmed);
+                    if (fields.length < 3) return;
+
+                    fans.push({
+                        uid: fields[0],
+                        name: fields[1],
+                        level: fields[2],
+                        isCaptain: fields[3] ?? 0
                     });
-                })
-                .catch(e => {
-                    container.innerHTML = "Error: fans.txt not found.";
+                });
+
+                return normalizeFans(fans);
+            };
+
+            const renderFans = (fans) => {
+                container.innerHTML = '';
+
+                fans.forEach((fan) => {
+                    const span = document.createElement('span');
+                    span.className = `fan-name ${fan.isCaptain ? 'is-captain' : ''}`;
+                    span.append(document.createTextNode(fan.name));
+
+                    if (fan.isCaptain) {
+                        const icon = document.createElement('span');
+                        icon.className = 'captain-icon';
+                        icon.textContent = '⚓';
+                        span.append(icon);
+                        span.title = `舰长 | UID: ${fan.uid}`;
+                    } else {
+                        span.title = `UID: ${fan.uid}`;
+                    }
+
+                    container.appendChild(span);
+                });
+            };
+
+            const loadFans = async () => {
+                try {
+                    const response = await fetch('fans.json', { cache: 'no-store' });
+                    if (response.ok) {
+                        const payload = await response.json();
+                        const fans = Array.isArray(payload) ? payload : payload.fans;
+                        if (Array.isArray(fans)) return normalizeFans(fans);
+                    }
+                } catch (error) {
+                    console.warn('Unable to load fans.json, falling back to fans.txt.', error);
+                }
+
+                const response = await fetch('fans.txt', { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Unable to load fan list: ${response.status}`);
+                }
+
+                return parseLegacyFansText(await response.text());
+            };
+
+            loadFans()
+                .then(renderFans)
+                .catch((error) => {
+                    console.error(error);
+                    container.textContent = 'Error: fan list is unavailable.';
                 });
         });
     </script>

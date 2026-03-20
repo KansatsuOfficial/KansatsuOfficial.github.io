@@ -1,0 +1,301 @@
+{
+  "uid": "3690985523514020",
+  "roomId": 1713821248,
+  "generatedAt": "2026-03-20T15:44:33.629Z",
+  "fans": [
+    {
+      "uid": "640879",
+      "name": "摸鱼散人苏三望",
+      "level": 26,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "3493110730459358",
+      "name": "包頭otto_Z",
+      "level": 24,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "149652883",
+      "name": "木子不是木子狸",
+      "level": 23,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "22589642",
+      "name": "冰柠檬扫地机",
+      "level": 23,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "362359061",
+      "name": "笨蛋调试器",
+      "level": 22,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "44614397",
+      "name": "芒斯特五百毫升",
+      "level": 22,
+      "isCaptain": true,
+      "guardLevel": 1
+    },
+    {
+      "uid": "178814141",
+      "name": "漫游者英特",
+      "level": 0,
+      "isCaptain": true,
+      "guardLevel": 1
+    },
+    {
+      "uid": "1169754262",
+      "name": "啥都玩的zero",
+      "level": 15,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "36092718",
+      "name": "琉达殊tenzin",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "391476451",
+      "name": "端离_PauseF",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "44579584",
+      "name": "紫电NS",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "491378910",
+      "name": "半笺绘梦",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "630889202",
+      "name": "あなたが一番好きovo",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "12586930",
+      "name": "立体角w",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1404549522",
+      "name": "本鼓",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1570146264",
+      "name": "雾影提灯",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "22302167",
+      "name": "苏璐呀",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "402791517",
+      "name": "霜折银杏",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "506420276",
+      "name": "命微suloy",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "74157631",
+      "name": "血墨霊",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "13509706",
+      "name": "临秋方雨",
+      "level": 9,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "2094570193",
+      "name": "直播留档员",
+      "level": 9,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "38822387",
+      "name": "绿叶-乘-风破浪-前行",
+      "level": 9,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "785445",
+      "name": "鸽鹉live_大杨叔",
+      "level": 9,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1345381489",
+      "name": "潜水小五酱",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546872404773702",
+      "name": "祾九魌097_Official",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "382386521",
+      "name": "羟甲氧苯羟苯并吡喃鎓",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "689955798",
+      "name": "Dolphin正在观察人类",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "604403",
+      "name": "三司あやせのパッド",
+      "level": 7,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "673678561",
+      "name": "水井244_BI7AZG",
+      "level": 7,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "11330125",
+      "name": "封渊洹-Liang",
+      "level": 6,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "494317457",
+      "name": "Schwarz0079",
+      "level": 6,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "343746529",
+      "name": "网友小Ber",
+      "level": 5,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "451338243",
+      "name": "Mosalov",
+      "level": 5,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1982125926",
+      "name": "白燭葵",
+      "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "401964279",
+      "name": "MUYUE壹月一",
+      "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "450432075",
+      "name": "月战酪饼",
+      "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "609707541",
+      "name": "Loser-Defeatism",
+      "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "10404349",
+      "name": "xujiafeng12345",
+      "level": 0,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "292824562",
+      "name": "浩二今天吃节操",
+      "level": 0,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "34622332",
+      "name": "幻想-杀手",
+      "level": 0,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "510941286",
+      "name": "阳光男孩游城十代",
+      "level": 0,
+      "isCaptain": false,
+      "guardLevel": 0
+    }
+  ]
+}
