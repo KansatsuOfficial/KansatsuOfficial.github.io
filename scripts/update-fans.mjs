@@ -8,7 +8,25 @@ const DEFAULT_PAGE_SIZE = 30;
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, '..');
 
-const uid = String(process.env.BILIBILI_UID ?? DEFAULT_UID).trim();
+function normalizeUid(value) {
+    const raw = String(value ?? '').trim();
+    if (!raw) return '';
+
+    if (/^\d+$/.test(raw)) {
+        return raw;
+    }
+
+    if (/^\d+(?:\.\d+)?e[+-]?\d+$/i.test(raw)) {
+        const numeric = Number(raw);
+        if (Number.isSafeInteger(numeric) && numeric > 0) {
+            return numeric.toFixed(0);
+        }
+    }
+
+    return raw;
+}
+
+const uid = normalizeUid(process.env.BILIBILI_UID ?? DEFAULT_UID);
 const pageSize = Number.parseInt(process.env.BILIBILI_PAGE_SIZE ?? `${DEFAULT_PAGE_SIZE}`, 10) || DEFAULT_PAGE_SIZE;
 const textOutputPath = path.resolve(repoRoot, process.env.FANS_TEXT_OUTPUT ?? 'fans.txt');
 const jsonOutputPath = path.resolve(repoRoot, process.env.FANS_JSON_OUTPUT ?? 'fans.json');
@@ -267,6 +285,10 @@ async function loadExistingFans() {
 async function main() {
     if (!uid) {
         throw new Error('BILIBILI_UID is required.');
+    }
+
+    if (!/^\d+$/.test(uid)) {
+        throw new Error(`BILIBILI_UID is invalid: ${uid}. If this came from GitHub Actions, quote the UID in workflow env.`);
     }
 
     const existingData = await loadExistingFans();

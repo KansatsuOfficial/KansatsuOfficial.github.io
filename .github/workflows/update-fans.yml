@@ -16,7 +16,7 @@ jobs:
   update-fans:
     runs-on: ubuntu-latest
     env:
-      BILIBILI_UID: 3690985523514020
+      BILIBILI_UID: '3690985523514020'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
