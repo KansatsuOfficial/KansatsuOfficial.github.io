@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-22T07:43:13.479Z",
+  "generatedAt": "2026-03-22T13:14:55.479Z",
   "fans": [
     {
       "uid": "149652883",
@@ -130,6 +130,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "479320250",
+      "name": "一只小冰吖",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "506420276",
       "name": "命微suloy",
       "level": 11,
@@ -144,6 +151,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "38822387",
+      "name": "绿叶-乘-风破浪-前行",
+      "level": 10,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "13509706",
       "name": "临秋方雨",
       "level": 9,
@@ -153,13 +167,6 @@
     {
       "uid": "2094570193",
       "name": "直播留档员",
-      "level": 9,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "38822387",
-      "name": "绿叶-乘-风破浪-前行",
       "level": 9,
       "isCaptain": false,
       "guardLevel": 0
