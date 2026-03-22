@@ -1,8 +1,15 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-20T15:44:33.629Z",
+  "generatedAt": "2026-03-22T07:43:13.479Z",
   "fans": [
+    {
+      "uid": "149652883",
+      "name": "木子不是木子狸",
+      "level": 26,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
     {
       "uid": "640879",
       "name": "摸鱼散人苏三望",
@@ -14,13 +21,6 @@
       "uid": "3493110730459358",
       "name": "包頭otto_Z",
       "level": 24,
-      "isCaptain": true,
-      "guardLevel": 3
-    },
-    {
-      "uid": "149652883",
-      "name": "木子不是木子狸",
-      "level": 23,
       "isCaptain": true,
       "guardLevel": 3
     },
