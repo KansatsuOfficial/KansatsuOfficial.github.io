@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-22T13:14:55.479Z",
+  "generatedAt": "2026-03-22T18:56:45.800Z",
   "fans": [
     {
       "uid": "149652883",
@@ -81,6 +81,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "479320250",
+      "name": "一只小冰吖",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "491378910",
       "name": "半笺绘梦",
       "level": 12,
@@ -130,13 +137,6 @@
       "guardLevel": 0
     },
     {
-      "uid": "479320250",
-      "name": "一只小冰吖",
-      "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
       "uid": "506420276",
       "name": "命微suloy",
       "level": 11,
@@ -158,6 +158,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "785445",
+      "name": "鸽鹉live_大杨叔",
+      "level": 10,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "13509706",
       "name": "临秋方雨",
       "level": 9,
@@ -167,13 +174,6 @@
     {
       "uid": "2094570193",
       "name": "直播留档员",
-      "level": 9,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "785445",
-      "name": "鸽鹉live_大杨叔",
       "level": 9,
       "isCaptain": false,
       "guardLevel": 0
@@ -203,6 +203,20 @@
       "uid": "689955798",
       "name": "Dolphin正在观察人类",
       "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546629093198795",
+      "name": "衅钟111",
+      "level": 7,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "451338243",
+      "name": "Mosalov",
+      "level": 7,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -237,13 +251,6 @@
     {
       "uid": "343746529",
       "name": "网友小Ber",
-      "level": 5,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "451338243",
-      "name": "Mosalov",
       "level": 5,
       "isCaptain": false,
       "guardLevel": 0
