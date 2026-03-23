@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-23T13:51:49.136Z",
+  "generatedAt": "2026-03-23T19:15:39.173Z",
   "fans": [
     {
       "uid": "149652883",
@@ -53,6 +53,13 @@
       "guardLevel": 1
     },
     {
+      "uid": "491378910",
+      "name": "半笺绘梦",
+      "level": 17,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "510941286",
       "name": "阳光男孩游城十代",
       "level": 16,
@@ -74,9 +81,16 @@
       "guardLevel": 0
     },
     {
-      "uid": "491378910",
-      "name": "半笺绘梦",
+      "uid": "785445",
+      "name": "鸽鹉live_大杨叔",
       "level": 13,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "13509706",
+      "name": "临秋方雨",
+      "level": 12,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -172,16 +186,16 @@
       "guardLevel": 0
     },
     {
-      "uid": "785445",
-      "name": "鸽鹉live_大杨叔",
+      "uid": "1888044797",
+      "name": "Titanium_Dioxide",
       "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
-      "uid": "13509706",
-      "name": "临秋方雨",
-      "level": 9,
+      "uid": "517429976",
+      "name": "不会起名の热带风暴",
+      "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -189,6 +203,13 @@
       "uid": "2094570193",
       "name": "直播留档员",
       "level": 9,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1143640639",
+      "name": "一支树人Lin阿",
+      "level": 8,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -294,6 +315,20 @@
       "uid": "65565989",
       "name": "名字不够s呢",
       "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "88258347",
+      "name": "冻鱼翻身",
+      "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "26091067",
+      "name": "匠心梦の王",
+      "level": 3,
       "isCaptain": false,
       "guardLevel": 0
     },
