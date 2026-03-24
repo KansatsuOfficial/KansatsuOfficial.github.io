@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-24T03:15:20.600Z",
+  "generatedAt": "2026-03-24T07:31:17.521Z",
   "fans": [
     {
       "uid": "149652883",
@@ -74,6 +74,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "13509706",
+      "name": "临秋方雨",
+      "level": 13,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "44579584",
       "name": "紫电NS",
       "level": 13,
@@ -84,13 +91,6 @@
       "uid": "785445",
       "name": "鸽鹉live_大杨叔",
       "level": 13,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "13509706",
-      "name": "临秋方雨",
-      "level": 12,
       "isCaptain": false,
       "guardLevel": 0
     },
