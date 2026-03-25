@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-25T07:30:11.587Z",
+  "generatedAt": "2026-03-25T13:51:47.580Z",
   "fans": [
     {
       "uid": "149652883",
@@ -68,7 +68,7 @@
     },
     {
       "uid": "1169754262",
-      "name": "啥都玩的zero",
+      "name": "Zero_Observer",
       "level": 15,
       "isCaptain": false,
       "guardLevel": 0
@@ -91,6 +91,20 @@
       "uid": "785445",
       "name": "鸽鹉live_大杨叔",
       "level": 13,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1404549522",
+      "name": "本鼓",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1570146264",
+      "name": "雾影提灯",
+      "level": 12,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -125,20 +139,6 @@
     {
       "uid": "12586930",
       "name": "立体角w",
-      "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "1404549522",
-      "name": "本鼓",
-      "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "1570146264",
-      "name": "雾影提灯",
       "level": 11,
       "isCaptain": false,
       "guardLevel": 0
