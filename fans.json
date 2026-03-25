@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-25T13:51:47.580Z",
+  "generatedAt": "2026-03-25T19:13:07.116Z",
   "fans": [
     {
       "uid": "149652883",
@@ -88,6 +88,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "630889202",
+      "name": "あなたが一番好きovo",
+      "level": 13,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "785445",
       "name": "鸽鹉live_大杨叔",
       "level": 13,
@@ -125,13 +132,6 @@
     {
       "uid": "479320250",
       "name": "一只小冰吖",
-      "level": 12,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "630889202",
-      "name": "あなたが一番好きovo",
       "level": 12,
       "isCaptain": false,
       "guardLevel": 0
@@ -186,6 +186,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "7831443",
+      "name": "Mou摸桐",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "1888044797",
       "name": "Titanium_Dioxide",
       "level": 10,
@@ -235,6 +242,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "494317457",
+      "name": "Schwarz0079",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "689955798",
       "name": "Dolphin正在观察人类",
       "level": 8,
@@ -244,13 +258,6 @@
     {
       "uid": "451338243",
       "name": "Mosalov",
-      "level": 7,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "494317457",
-      "name": "Schwarz0079",
       "level": 7,
       "isCaptain": false,
       "guardLevel": 0
@@ -277,6 +284,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "3546688809601471",
+      "name": "席卷冰原的雪色",
+      "level": 6,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "343746529",
       "name": "网友小Ber",
       "level": 5,
@@ -286,6 +300,13 @@
     {
       "uid": "1982125926",
       "name": "白燭葵",
+      "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "26091067",
+      "name": "匠心梦の王",
       "level": 4,
       "isCaptain": false,
       "guardLevel": 0
@@ -322,13 +343,6 @@
       "uid": "88258347",
       "name": "冻鱼翻身",
       "level": 4,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "26091067",
-      "name": "匠心梦の王",
-      "level": 3,
       "isCaptain": false,
       "guardLevel": 0
     },
