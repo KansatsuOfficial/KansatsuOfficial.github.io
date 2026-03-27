@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-27T13:45:10.668Z",
+  "generatedAt": "2026-03-27T19:12:36.450Z",
   "fans": [
     {
       "uid": "149652883",
@@ -55,6 +55,13 @@
     {
       "uid": "491378910",
       "name": "半笺绘梦",
+      "level": 18,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1169754262",
+      "name": "Zero_Observer",
       "level": 17,
       "isCaptain": false,
       "guardLevel": 0
@@ -67,8 +74,8 @@
       "guardLevel": 0
     },
     {
-      "uid": "1169754262",
-      "name": "Zero_Observer",
+      "uid": "785445",
+      "name": "鸽鹉live_大杨叔",
       "level": 15,
       "isCaptain": false,
       "guardLevel": 0
@@ -102,13 +109,6 @@
       "guardLevel": 0
     },
     {
-      "uid": "785445",
-      "name": "鸽鹉live_大杨叔",
-      "level": 13,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
       "uid": "1404549522",
       "name": "本鼓",
       "level": 12,
@@ -118,6 +118,20 @@
     {
       "uid": "1570146264",
       "name": "雾影提灯",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "2094570193",
+      "name": "直播留档员",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "22302167",
+      "name": "苏璐呀",
       "level": 12,
       "isCaptain": false,
       "guardLevel": 0
@@ -144,15 +158,15 @@
       "guardLevel": 0
     },
     {
-      "uid": "12586930",
-      "name": "立体角w",
-      "level": 11,
+      "uid": "74157631",
+      "name": "血墨霊",
+      "level": 12,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
-      "uid": "22302167",
-      "name": "苏璐呀",
+      "uid": "12586930",
+      "name": "立体角w",
       "level": 11,
       "isCaptain": false,
       "guardLevel": 0
@@ -179,13 +193,6 @@
       "guardLevel": 0
     },
     {
-      "uid": "74157631",
-      "name": "血墨霊",
-      "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
       "uid": "7831443",
       "name": "Mou摸桐",
       "level": 11,
@@ -203,13 +210,6 @@
       "uid": "517429976",
       "name": "不会起名の热带风暴",
       "level": 10,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "2094570193",
-      "name": "直播留档员",
-      "level": 9,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -242,8 +242,22 @@
       "guardLevel": 0
     },
     {
+      "uid": "451338243",
+      "name": "Mosalov",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "494317457",
       "name": "Schwarz0079",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "604403",
+      "name": "三司あやせのパッド",
       "level": 8,
       "isCaptain": false,
       "guardLevel": 0
@@ -252,20 +266,6 @@
       "uid": "689955798",
       "name": "Dolphin正在观察人类",
       "level": 8,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "451338243",
-      "name": "Mosalov",
-      "level": 7,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "604403",
-      "name": "三司あやせのパッド",
-      "level": 7,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -298,6 +298,20 @@
       "guardLevel": 0
     },
     {
+      "uid": "401964279",
+      "name": "MUYUE壹月一",
+      "level": 5,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1092162257",
+      "name": "canyon_nico",
+      "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "1982125926",
       "name": "白燭葵",
       "level": 4,
@@ -307,13 +321,6 @@
     {
       "uid": "26091067",
       "name": "匠心梦の王",
-      "level": 4,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "401964279",
-      "name": "MUYUE壹月一",
       "level": 4,
       "isCaptain": false,
       "guardLevel": 0
