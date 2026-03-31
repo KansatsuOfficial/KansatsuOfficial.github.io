@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-31T14:03:33.278Z",
+  "generatedAt": "2026-03-31T19:30:33.399Z",
   "fans": [
     {
       "uid": "149652883",
@@ -102,6 +102,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "630889202",
+      "name": "あなたが一番好きovo",
+      "level": 14,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "13509706",
       "name": "临秋方雨",
       "level": 13,
@@ -125,13 +132,6 @@
     {
       "uid": "44579584",
       "name": "紫电NS",
-      "level": 13,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "630889202",
-      "name": "あなたが一番好きovo",
       "level": 13,
       "isCaptain": false,
       "guardLevel": 0
@@ -278,7 +278,7 @@
     },
     {
       "uid": "689955798",
-      "name": "Dolphin正在观察人类",
+      "name": "正在观察人类",
       "level": 8,
       "isCaptain": false,
       "guardLevel": 0
