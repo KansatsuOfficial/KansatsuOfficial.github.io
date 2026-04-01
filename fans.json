@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-01T07:55:53.672Z",
+  "generatedAt": "2026-04-01T14:06:51.414Z",
   "fans": [
     {
       "uid": "149652883",
@@ -83,6 +83,13 @@
     {
       "uid": "510941286",
       "name": "阳光男孩游城十代",
+      "level": 17,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "785445",
+      "name": "鸽鹉live_大杨叔",
       "level": 16,
       "isCaptain": false,
       "guardLevel": 0
@@ -90,13 +97,6 @@
     {
       "uid": "3546629093198795",
       "name": "衅钟111",
-      "level": 15,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "785445",
-      "name": "鸽鹉live_大杨叔",
       "level": 15,
       "isCaptain": false,
       "guardLevel": 0
@@ -305,8 +305,22 @@
       "guardLevel": 0
     },
     {
+      "uid": "65565989",
+      "name": "名字不够s呢",
+      "level": 6,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "343746529",
       "name": "网友小Ber",
+      "level": 5,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "391685867",
+      "name": "忍鲨sharninjak",
       "level": 5,
       "isCaptain": false,
       "guardLevel": 0
@@ -321,13 +335,6 @@
     {
       "uid": "450432075",
       "name": "月战酪饼",
-      "level": 5,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "65565989",
-      "name": "名字不够s呢",
       "level": 5,
       "isCaptain": false,
       "guardLevel": 0
@@ -364,6 +371,13 @@
       "uid": "88258347",
       "name": "冻鱼翻身",
       "level": 4,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546790257232760",
+      "name": "妇卿",
+      "level": 3,
       "isCaptain": false,
       "guardLevel": 0
     },
