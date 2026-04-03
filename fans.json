@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-03T13:39:23.888Z",
+  "generatedAt": "2026-04-03T19:07:07.211Z",
   "fans": [
     {
       "uid": "149652883",
@@ -34,7 +34,7 @@
     {
       "uid": "3493110730459358",
       "name": "包頭otto_Z",
-      "level": 24,
+      "level": 25,
       "isCaptain": true,
       "guardLevel": 3
     },
@@ -102,6 +102,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "1570146264",
+      "name": "雾影提灯",
+      "level": 14,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "630889202",
       "name": "あなたが一番好きovo",
       "level": 14,
@@ -118,13 +125,6 @@
     {
       "uid": "1404549522",
       "name": "本鼓",
-      "level": 13,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "1570146264",
-      "name": "雾影提灯",
       "level": 13,
       "isCaptain": false,
       "guardLevel": 0
@@ -172,6 +172,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "506420276",
+      "name": "命微suloy",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "74157631",
       "name": "血墨霊",
       "level": 12,
@@ -209,13 +216,6 @@
     {
       "uid": "451338243",
       "name": "Mslv正在观察人类",
-      "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "506420276",
-      "name": "命微suloy",
       "level": 11,
       "isCaptain": false,
       "guardLevel": 0
