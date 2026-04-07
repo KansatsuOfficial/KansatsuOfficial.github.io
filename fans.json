@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-07T14:02:39.225Z",
+  "generatedAt": "2026-04-07T19:33:33.265Z",
   "fans": [
     {
       "uid": "640879",
@@ -398,6 +398,13 @@
     {
       "uid": "327661918",
       "name": "HiYukio",
+      "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3493141921401157",
+      "name": "千风幻想",
       "level": 2,
       "isCaptain": false,
       "guardLevel": 0
