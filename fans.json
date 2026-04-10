@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-10T13:51:28.245Z",
+  "generatedAt": "2026-04-10T19:13:58.163Z",
   "fans": [
     {
       "uid": "640879",
@@ -228,16 +228,16 @@
       "guardLevel": 0
     },
     {
-      "uid": "517429976",
-      "name": "不会起名の热带风暴",
+      "uid": "1143640639",
+      "name": "一支树人Lin阿",
       "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
-      "uid": "1143640639",
-      "name": "一支树人Lin阿",
-      "level": 9,
+      "uid": "517429976",
+      "name": "不会起名の热带风暴",
+      "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },
