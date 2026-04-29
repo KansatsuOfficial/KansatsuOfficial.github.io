@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-29T14:32:39.948Z",
+  "generatedAt": "2026-04-29T19:55:21.252Z",
   "fans": [
     {
       "uid": "149652883",
@@ -11,16 +11,16 @@
       "guardLevel": 3
     },
     {
-      "uid": "640879",
-      "name": "摸鱼散人苏三望",
+      "uid": "362359061",
+      "name": "笨蛋调试器",
       "level": 27,
       "isCaptain": true,
       "guardLevel": 3
     },
     {
-      "uid": "362359061",
-      "name": "笨蛋调试器",
-      "level": 26,
+      "uid": "640879",
+      "name": "摸鱼散人苏三望",
+      "level": 27,
       "isCaptain": true,
       "guardLevel": 3
     },
