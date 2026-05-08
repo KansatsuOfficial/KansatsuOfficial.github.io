@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-05-08T07:59:50.997Z",
+  "generatedAt": "2026-05-08T14:17:58.723Z",
   "fans": [
     {
       "uid": "640879",
@@ -440,6 +440,13 @@
     {
       "uid": "3493141921401157",
       "name": "千风幻想",
+      "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "354389571",
+      "name": "萨米蓝音",
       "level": 2,
       "isCaptain": false,
       "guardLevel": 0
