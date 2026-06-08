@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-06-08T05:02:59.623Z",
+  "generatedAt": "2026-06-08T11:21:01.378Z",
   "fans": [
     {
       "uid": "640879",
@@ -33,7 +33,7 @@
     },
     {
       "uid": "3493110730459358",
-      "name": "包頭otto_Z",
+      "name": "包頭otto",
       "level": 25,
       "isCaptain": true,
       "guardLevel": 3
@@ -424,6 +424,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "354389571",
+      "name": "萨米蓝音",
+      "level": 3,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "3546790257232760",
       "name": "妇卿",
       "level": 3,
@@ -440,13 +447,6 @@
     {
       "uid": "3493141921401157",
       "name": "千风幻想",
-      "level": 2,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "354389571",
-      "name": "萨米蓝音",
       "level": 2,
       "isCaptain": false,
       "guardLevel": 0
