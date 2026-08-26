@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-08-26T13:17:57.423Z",
+  "generatedAt": "2026-08-26T20:04:50.214Z",
   "fans": [
     {
       "uid": "640879",
@@ -461,7 +461,7 @@
     {
       "uid": "3546719457380731",
       "name": "重言式Tautology",
-      "level": 1,
+      "level": 2,
       "isCaptain": false,
       "guardLevel": 0
     },
