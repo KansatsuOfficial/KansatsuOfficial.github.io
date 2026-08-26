@@ -1,7 +1,7 @@
 {
   "uid": "3690985523514020",
   "roomId": 1713821248,
-  "generatedAt": "2026-08-26T07:10:14.041Z",
+  "generatedAt": "2026-08-26T13:17:57.423Z",
   "fans": [
     {
       "uid": "640879",
@@ -455,6 +455,13 @@
       "uid": "3493141921401157",
       "name": "千风幻想",
       "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546719457380731",
+      "name": "重言式Tautology",
+      "level": 1,
       "isCaptain": false,
       "guardLevel": 0
     },
